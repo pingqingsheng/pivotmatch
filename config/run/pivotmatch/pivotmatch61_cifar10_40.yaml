@@ -1,0 +1,50 @@
+algorithm: pivotmatch61
+resume: False
+load_path: latest_model.pth
+use_tensorboard: True
+use_wandb: False
+epoch: 1024
+num_train_iter: 1048576
+# num_eval_iter: 5120
+num_eval_iter: 1024
+num_log_iter: 256
+num_labels: 40
+batch_size: 64
+eval_batch_size: 256
+hard_label: False
+threshold: 0.95
+lambda_u: 1.0
+lambda_p: 1.0
+lambda_c: 1.0
+proj_size: 128
+queue_batch: 10
+epoch_warm_up: 1
+# ablation paramter
+num_pivots: 30
+alpha: 0.9
+# ablation paramter
+epsilon1: 0.05
+epsilon2: 0.05
+# sharpen_T: 1
+uratio: 7
+temperature: 0.1
+ema_m: 0.999
+crop_ratio: 0.875
+img_size: 32
+optim: SGD
+lr: 0.03
+momentum: 0.9
+weight_decay: 0.0005
+layer_decay: 1.0
+amp: False
+clip: 0.0
+use_cat: True
+net: wrn_28_2
+net_from_name: False
+dataset: cifar10
+train_sampler: RandomSampler
+num_classes: 10
+num_workers: 2
+world_size: 1
+rank: 0
+multiprocessing_distributed: False
