@@ -323,6 +323,16 @@ if __name__ == "__main__":
 # config file path: config/run/pivotmatch/pivotmatch61_cifar10_40.yaml
 
 # ablation1: alpha for label propagation
+# run21, alpha = 1 (I have run seed=0)
+# change config file's alpha to 1, <keep num_pivots = 30>, please check log file for paramter
+# python run.py --cfg config/run/pivotmatch/pivotmatch61_cifar10_40.yaml --run_id 21 --gpu_id 0 --seed 1
+# python run.py --cfg config/run/pivotmatch/pivotmatch61_cifar10_40.yaml --run_id 21 --gpu_id 1 --seed 2 
+
+# run22 alpha = 0.8 (I have run seed=0)
+# change config file's alpha to 0.8, <keep num_pivots = 30>, please check log file for paramter
+# python run.py --cfg config/run/pivotmatch/pivotmatch61_cifar10_40.yaml --run_id 22 --gpu_id 0 --seed 1
+# python run.py --cfg config/run/pivotmatch/pivotmatch61_cifar10_40.yaml --run_id 22 --gpu_id 1 --seed 2 
+
 # run23, alpha = 0.7
 # change config file's alpha to 0.7, <keep num_pivots = 30>, please check log file for paramter
 # python run.py --cfg config/run/pivotmatch/pivotmatch61_cifar10_40.yaml --run_id 23 --gpu_id 0 --seed 0 
